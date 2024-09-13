@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Static Resume</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="resume-container">
+      <header class="header">
+        <h1>Static Resume By H.H</h1>
+        <div class="profile">
+          <img
+            src="./Image/picofme.png"
+            alt="Profile Picture"
+            id="profile-picture"
+          />
+          <div class="personal-info">
+            <h2 id="name">Hadeed Hussain Morai</h2>
+            <p class="contact">
+              Email:
+              <a href="mailto:bushramemon098@gmail.com"
+                >programmerhadeed@gmail.com</a
+              >
+            </p>
+            <p class="contact">
+              Phone: <a href="tel:03322965814">0332-2965814</a>
+            </p>
+          </div>
+        </div>
+      </header>
+
+      <div class="tabs">
+        <button id="education-tab">Education</button>
+        <button id="skills-tab">Skills</button>
+        <button id="experience-tab">Experience</button>
+      </div>
+
+      <main class="content">
+        <!-- Education Section -->
+        <section id="education-content" class="content-section">
+          <h2>Education</h2>
+          <div class="card-grid"></div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills-content" class="content-section">
+          <h2>Skills</h2>
+          <ul class="skill-list"></ul>
+        </section>
+
+        <!-- Work Experience Section -->
+        <section id="work-experience-content" class="content-section">
+          <h2>Work Experience</h2>
+          <div class="card-grid"></div>
+        </section>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

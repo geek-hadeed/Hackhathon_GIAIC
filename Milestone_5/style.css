@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-image: url(images/pexels-photo-1509534.jpeg);
+}
+.heading{
+    color: #ffffff;
+    font-weight: bold;
+    font-size:xx-large ;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.mainn{
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgb(111, 170, 151);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.personal{
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #3c00ff;
+    background-color: #c9e9f1;
+    text-align: center;
+    font-size: x-large;
+}
+
+.inputname{
+    color: #000000;
+    font-size: larger;
+    margin-left: 20px;
+    padding-top: 30px;
+    text-decoration:solid;
+}
+.forpic{
+    color: #3c00ff;
+}
+input[type="file"]{
+    font-size: 16px;
+    padding: 10px;
+    width: 250px;
+    background-color:#c9e9f1 ;
+    border-radius: 15px;
+    margin-top: 20px;
+
+}
+input[type="file"]::file-selector-button{
+    background-color:#0a7df8;
+    cursor: pointer;
+    font-size: large;
+    color: white;
+    border-color: #0a7df8;
+    border-radius: 10px;
+}
+input[type="file"]::file-selector-button:hover{
+    background-color: #c2ad8194;
+}
+input[type="submit"]{
+    
+    border-radius: 30px;
+    background-color: #0a7df8;
+    color: white;
+    font-size: x-large;
+    padding-bottom: 20px;
+}
+form {
+    margin-bottom: 40px;
+}
+
+input, textarea {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border-color: #3c00ff;
+    border-width: 3px;
+    border-radius: 10px;
+    
+}
+    
+#resume {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 8px;
+        text-align: center;
+    border: 3px solid #3c00ff;
+    color: #3c00ff;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgb(111, 170, 151);
+}
+.resumeinfo{
+    background-color: #c9e9f1;
+    color: #3c00ff;
+    text-align: center;
+}
+
+h2, p {
+    margin: 10px 0;
+}
+
+img {
+    max-width: 150px;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+.buttonprint{
+    color: white;
+    border-radius: 10px;
+    background-color: #92140c;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 150px;
+    margin-left: 600px;
+    height: 50px;
+}
+
+
+
+@media (max-width: 600px) {
+    /* Adjusting padding and font size for smaller screens */
+    body {
+        margin: 10px;
+    }
+
+    form {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    input, textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    img {
+        max-width: 100px;
+    }
+    input[type="submit"]{
+        padding: auto;
+    }
+    #resume{
+        padding: 15px;
+        margin-bottom: 20px;
+        margin-left: -3px;
+    }
+
+}

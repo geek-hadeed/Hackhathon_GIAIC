@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hadeed's Dynamic Resume</title>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="heading"><strong>Milestone 5 Dynamic Resume Builder by H.H</strong></div>
+    <div class="mainn">
+        <form id="resumeForm">
+            <div class="personal"><strong>Personal Info</strong></div>
+            <label class="inputname" id="upload" for="picture"><strong>Upload Picture:</strong></label>
+            <input class="forpic" type="file" id="picture" name="picture" accept="image/* required"><br><br>
+            <label class="inputname" for="name"><strong>Name:</strong></label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label class="inputname" for="phone"><strong>Phone Number:</strong></label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+            <label class="inputname" for="email"><strong>Email:</strong></label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label class="inputname" for="address"><strong>Address:</strong></label>
+            <textarea id="address" name="address" required></textarea><br><br>
+            <div class="personal"><strong>Skills</strong></div>
+            <label class="inputname" for="skills"></label>
+            <input type="text" id="skills" name="skills" required><br><br>
+            <div class="personal"><strong>Education</strong></div>
+            <label class="inputname" for="education"></label>
+            <textarea id="education" name="education" required></textarea><br><br>
+            <div class="personal"><strong>Experience</strong></div>
+            <label class="inputname" for="experience"></label>
+            <textarea id="experience" name="experience" required></textarea><br><br>
+            <input class="inputname" type="submit" value="Generate Resume">
+        </form>
+    </div>
+    <div id="resume">
+        <h3 style="color: brown;">Click Your Skills, Education, and Experience to add more info:</h3>
+        <h1 class="resumeinfo">Personal Info</h1>
+        <img id="displayPicture">
+        <h2 id="displayName"></h2>
+        <p id="displayPhone"></p>
+        <p id="displayEmail"></p>
+        <p id="displayAddress"></p>
+        <h1 class="resumeinfo">Skills</h1>
+        <p id="displaySkills" contenteditable="true"></p>
+        <h1 class="resumeinfo">Education</h1>
+        <p id="displayEducation" contenteditable="true"></p>
+        <h1 class="resumeinfo">Experience</h1>
+        <p id="displayExperience" contenteditable="true"></p>
+    </div>
+    <button class="buttonprint" onclick="printCV()">Download as PDF</button>
+    <script src="script.js"></script>
+</body>
+</html>
